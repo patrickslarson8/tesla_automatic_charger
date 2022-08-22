@@ -8,7 +8,7 @@ Uses the Tensorflow object detection API found [here](https://github.comtensorfl
 My script uses a modified version of detect.py from this [repository](https://github.comtensorflowexamplestreemasterliteexamplesobject_detectionraspberry_pi)
 
 Picture of training metrics from Tensorboard:
-![Network Performance Metrics](\Images\Screenshots\tensorboard_screenshot_1.jpg)
+![Network Performance Metrics](/Images/Screenshots/tensorboard_screenshot_1.jpg)
 
 ## Directory Scructure
 ### Data Labelling
