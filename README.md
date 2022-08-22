@@ -13,7 +13,7 @@ My script uses a modified version of detect.py from this [repository]
 ### Data Labelling
 - Includes helper scripts and example .csv files of labels
 - Pictures labeled using [labelimg:](https://github.com/heartexlabs/labelImg)
-- Labels converted from xml to csv with inclded scripts.
+- Labels converted from xml to csv with included scripts.
 - Scripts are from [Dat Tran's Raccoon Dataset](https://github.com/datitran/raccoon_dataset)
 - .csv then converted to tfrecord files for use in training
 
