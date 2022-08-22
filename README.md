@@ -1,8 +1,7 @@
 # tesla_charger_arm
 A machine learning model for plugging in a Tesla Model 3
 
-A video of it in action here
-https://www.youtube.comwatchv=octvXMaTG44&t
+A video of it in action [here](https://www.youtube.comwatchv=octvXMaTG44&t)
 
 Uses the Tensorflow object detection API found here
 https://github.comtensorflowmodelstreemasterresearchobject_detection
