@@ -10,6 +10,8 @@ My script uses a modified version of detect.py from this [repository](https://gi
 Picture of training metrics from Tensorboard:
 ![Network Performance Metrics](/Images/Screenshots/tensorboard_screenshot_1.jpg)
 
+Interacts with the vehicle using the [TeslaPy package](https://github.com/tdorssers/TeslaPy)
+
 ## Directory Scructure
 ### Data Labelling
 - Includes helper scripts and example .csv files of labels
