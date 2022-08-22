@@ -1,0 +1,37 @@
+<annotation>
+    <folder>output</folder>
+    <filename>32-05.JPG</filename>
+    <path>/home/pat/Documents/aiy/bounding-box-augmentation-master/output/32-05.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>640</width>
+        <height>640</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>logo</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>109</xmin>
+            <ymin>395</ymin>
+            <xmax>144</xmax>
+            <ymax>434</ymax>
+        </bndbox>
+    </object>    <object>
+        <name>port</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>236</xmin>
+            <ymin>404</ymin>
+            <xmax>373</xmax>
+            <ymax>551</ymax>
+        </bndbox>
+    </object>
+</annotation>

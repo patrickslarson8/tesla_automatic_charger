@@ -1,0 +1,26 @@
+<annotation>
+    <folder>output</folder>
+    <filename>4-01.JPG</filename>
+    <path>/home/pat/Documents/aiy/bounding-box-augmentation-master/output/4-01.JPG</path>
+    <source>
+        <database>Unknown</database>
+    </source>
+    <size>
+        <width>640</width>
+        <height>640</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    <object>
+        <name>reflector</name>
+        <pose>Unspecified</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>264</xmin>
+            <ymin>331</ymin>
+            <xmax>325</xmax>
+            <ymax>385</ymax>
+        </bndbox>
+    </object>
+</annotation>
