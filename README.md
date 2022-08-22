@@ -26,3 +26,10 @@ My script uses a modified version of detect.py from this [repository]
 - start_training.txt is a list of commands used to train this model
 
 ### Raspberry Pi Files
+- arm_plugger.py is the main script which is run to detect and
+plug in the arm
+- Motor Control contains scripts that were used to fine tune
+mechanical movement
+- Component testing contains scripts used to verify component
+operation e.g. the Zigbee light, communication with arduino,
+and servo operation.
