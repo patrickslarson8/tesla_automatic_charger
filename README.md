@@ -2,37 +2,29 @@
 A machine learning model for plugging in a Tesla Model 3
 
 A video of it in action here
-httpswww.youtube.comwatchv=octvXMaTG44&t
+https://www.youtube.comwatchv=octvXMaTG44&t
 
 Uses the Tensorflow object detection API found here
-httpsgithub.comtensorflowmodelstreemasterresearchobject_detection
+https://github.comtensorflowmodelstreemasterresearchobject_detection
 
 My script uses a modified version of 
 detect.py from this repository
-httpsgithub.comtensorflowexamplestreemasterliteexamplesobject_detectionraspberry_pi
+https://github.comtensorflowexamplestreemasterliteexamplesobject_detectionraspberry_pi
 
 ##Directory Scructure
-###Testing Scripts
+###Data Labelling
+- Includes helper scripts and example .csv files of labels
+- Pictures labeled using labelimg: https://github.com/heartexlabs/labelImg
+- Labels converted from xml to csv with inclded scripts.
+- Scripts are from Dat Tran's Raccoon Dataset: https://github.com/datitran/raccoon_dataset
+- .csv then converted to tfrecord files for use in training
 
-###Tensorflow Model
-- detect_picamera.py used to visualize the results of the
-detection algorithm by displaying the camera feed live.
-Must use the physical hdmi port on the Raspberry pi.
+###Images
+- Screenshots of tensorboard output to show model performance
+- The actual images used in training with their labels
 
-###Annotations
-  - label_lite.txt used by scripts to translate activated
-neurons to the appropriate object category
+###Model Training
+- Includes annotations that are used during inferencing
+- start_training.txt is a list of commands used to train this model
 
-  - label_map.pbtxt used by the tensorflow model to translate
-detections to the correct category label
-
-  - test.record
-  - train.record
-  
-###Model
-  - 22774.tflite is a tflite model converted from a checkpoint
-  of the SSD resnet50 640x640 pre-trained model available here
-  httpsgithub.comtensorflowmodelsblobmasterresearchobject_detectiong3doctf2_detection_zoo.md
-  
-  - detect.tflite is the same as 22774.tflite but renamed
-  to work with existing scripts
+###Raspberry Pi Files

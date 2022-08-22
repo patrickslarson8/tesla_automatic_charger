@@ -1,0 +1,22 @@
+enter appropriate VENV
+
+#set TF_FORCE_GPU_ALLOW_GROWTH=true #Maybe this was needed in an old version of tf? Seems to break it now if you use it
+
+C:\Users\pataf\Documents\aiy\models\research>python object_detection\model_main_tf2.py --model_dir=..\..\workspace\tesla\models\my_resnet50_2\ --pipeline_config_path=..\..\workspace\tesla\models\my_resnet50_2\pipeline.config
+
+tensorboard --logdir=workspace\tesla\models\my_resnet50_2
+
+
+to eval:
+in new venv while the other venv is training:
+set CUDA_VISIBLE_DEVICES=-1
+python object_detection\model_main_tf2.py --model_dir=..\..\workspace\tesla\models\my_resnet50_2\ --pipeline_config_path=..\..\workspace\tesla\models\my_resnet50_2\pipeline.config --checkpoint_dir=..\..\workspace\tesla\models\my_resnet50_2\
+
+to export:
+Move selected checkpoint into "chosen_checkpoint" folder
+Move small 1kb "checkpoint" file into that folder as well
+Edit the first line of the small "checkpoint" file to point to the checkpoint you want to restore
+(tf_2_4_1) C:\Users\pataf\Documents\aiy>python models/research/object_detection/export_tflite_graph_tf2.py --pipeline_config_path=workspace/tesla/models/my_resnet50_2/pipeline.config --trained_checkpoint_dir=workspace/tesla/models/my_resnet50_2/chosen_checkpoint/ --output_directory=workspace/tesla/exported_models/resnet_640_tf2_2/tflite/
+
+to convert?:
+tflite_convert --saved_model_dir=workspace\tesla\exported_models\resnet_640_tf2_2\tflite\saved_model --output_file=workspace\tesla\exported_models\resnet_640_tf2_2\tflite\detect.tflite --input_shapes=1,640,640,3 --input_arrays=normalized_input_image_tensor --output_arrays="TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3" --inference_type=QUANTIZED_UINT8 --mean_values=128 --std_dev_values=128 --change_concat_input_ranges=false --allow_custom_ops
