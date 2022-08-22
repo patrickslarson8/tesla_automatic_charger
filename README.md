@@ -12,6 +12,23 @@ Picture of training metrics from Tensorboard:
 
 Interacts with the vehicle using the [TeslaPy package](https://github.com/tdorssers/TeslaPy)
 
+# Hardware
+Raspberry Pi 4
+- [RPi Camera V2](https://www.raspberrypi.com/products/camera-module-v2/)
+
+Horizontal Motor
+- [Pololu Gearmotor](https://www.pololu.com/product/4841)
+- [Pololu Arduino Motor Controller](https://www.pololu.com/product/2520)
+
+Plugger end control
+- [Generic servo](https://www.amazon.com/gp/product/B07KTSCN4J/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+Zigbee
+- [Generic Zigbee Controller](https://www.amazon.com/gp/product/B07P5LY7Z6/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
+
+Distance Sensor
+- [Adafruit US-100](https://www.adafruit.com/product/4019#tutorials)
+
 ## Directory Scructure
 ### Data Labelling
 - Includes helper scripts and example .csv files of labels
@@ -36,3 +53,5 @@ mechanical movement
 - Component testing contains scripts used to verify component
 operation e.g. the Zigbee light, communication with arduino,
 and servo operation.
+- detect.tflite is the Tensorflow Lite model used to inference
+the pictures taken by the RPi in operation.
