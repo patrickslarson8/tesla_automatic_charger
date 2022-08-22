@@ -3,11 +3,9 @@ A machine learning model for plugging in a Tesla Model 3
 
 A video of it in action [here](https://www.youtube.comwatchv=octvXMaTG44&t)
 
-Uses the Tensorflow object detection API found [here]
-(https://github.comtensorflowmodelstreemasterresearchobject_detection)
+Uses the Tensorflow object detection API found [here](https://github.comtensorflowmodelstreemasterresearchobject_detection)
 
-My script uses a modified version of detect.py from this [repository]
-(https://github.comtensorflowexamplestreemasterliteexamplesobject_detectionraspberry_pi)
+My script uses a modified version of detect.py from this [repository](https://github.comtensorflowexamplestreemasterliteexamplesobject_detectionraspberry_pi)
 
 ## Directory Scructure
 ### Data Labelling
